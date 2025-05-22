@@ -1,13 +1,119 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+/* Page Layout */
+.list-wrapper {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: auto;
+  background: #fdfdfd;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.05);
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.page-title {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+  color: #333;
+}
+
+/* Search + Buttons */
+.top-actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.search-input {
+  padding: 10px 14px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  min-width: 280px;
+}
+
+.button-group {
+  display: flex;
+  gap: 10px;
+}
+
+.btn {
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-weight: 500;
+  border: none;
+  cursor: pointer;
+}
+
+.primary-btn {
+  background-color: #6366f1;
+  color: white;
+}
+
+.export-btn {
+  background-color: #a5b4fc;
+  color: white;
+}
+
+.edit-btn {
+  background-color: #38bdf8;
+  color: white;
+  margin-right: 6px;
+}
+
+.delete-btn {
+  background-color: #f87171;
+  color: white;
+}
+
+/* Table Style */
+.table-card {
+  overflow-x: auto;
+  background: white;
+  border-radius: 12px;
+  padding: 10px;
+  box-shadow: 0 2px 20px rgba(0,0,0,0.03);
+}
+
+.modern-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.modern-table th,
+.modern-table td {
+  padding: 12px 14px;
+  text-align: left;
+  border-bottom: 1px solid #eee;
+}
+
+.modern-table th {
+  background-color: #f3f4f6;
+  color: #333;
+  font-weight: 600;
+}
+
+.car-img {
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+/* Active Circle */
+.status-circle {
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  box-shadow: 0 0 4px rgba(0,0,0,0.1);
+}
+
+.status-circle.active {
+  background-color: #10b981;
+}
+
+.status-circle.inactive {
+  background-color: #ef4444;
+}
+
+.text-right {
+  text-align: right;
 }
